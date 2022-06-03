@@ -17,6 +17,8 @@ class Solution {
     
     private void helper(int[] nums, int index, List<Integer> path){
         // Logic
+        // We are adding at each node in loop based recursion thats why no base case is written
+        // And not only at the end
         result.add(new ArrayList<>(path));
         for(int i = index; i<nums.length;i++){
             path.add(nums[i]);
